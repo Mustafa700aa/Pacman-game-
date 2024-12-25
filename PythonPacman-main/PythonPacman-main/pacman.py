@@ -18,16 +18,6 @@ GREEN = (0, 255, 0)
 
 screen = pygame.display.set_mode((WINDOW_SIZE, WINDOW_SIZE))
 pygame.display.set_caption("Pac-Man with A* and Static Path Ghosts")
-
-
-
-
-
-
-
-
-
-
 class PacMan:
     def __init__(self, x, y):
         self.x = x
@@ -43,21 +33,6 @@ class PacMan:
             self.x -= 1
         elif direction == 'RIGHT':
             self.x += 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Ghost:
     def __init__(self, x, y):
         self.x = x
@@ -104,25 +79,6 @@ def a_star(start, goal, walls):
                     came_from[neighbor] = current
 
     return []
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Game:
     def __init__(self):
         self.setup_new_game()
